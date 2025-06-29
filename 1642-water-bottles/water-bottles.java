@@ -15,6 +15,7 @@ class Solution {
             ans =  ans + newBottles ;
 
             numBottles = newBottles + remainBottles ;
+            // keep in mind the 15 num bottles 4 exchange bottles 3 new bottles and w 3 remaining bottles 
         }
         return ans ;
     }
