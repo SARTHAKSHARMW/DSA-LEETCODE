@@ -10,12 +10,12 @@ class Solution {
         // Step 1: Create a min heap of size k
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
-        // Step 2: Add first k elements
+        // Step 2: Add first k elements 
         for (int i = 0; i < k; i++) {
             pq.add(nums[i]);
         }
 
-        // Step 3: Process the rest of the elements
+        // Step 3: Process the rest of the elements // simply means that we have created a min heap and the value of the top element of the min heap if is less than nums[i] then sumply remove the top element and put the value of nums[i] in that place
         for (int i = k; i < nums.length; i++) {
             if (nums[i] > pq.peek()) {
                 pq.poll();
