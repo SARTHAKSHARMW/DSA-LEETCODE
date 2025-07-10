@@ -30,6 +30,8 @@
     }
 }
 
+// this code means find the total sum or right sum and also put the leftsum at zero index then to find the right sum toal sum - rightsum - leftsum ; if lsum and rsum is same then yes we have found the pivot index and if not then lsum = lsum + nums[i] ; else return - 1; 
+
 
 
    
