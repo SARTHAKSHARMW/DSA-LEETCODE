@@ -7,7 +7,7 @@ public class Solution {
 
             if (ch != ' ') {
                 length++;  // count characters of the last word
-            } else if (length > 0) {
+            } else if (length > 0) { //this simply means that if there is any space between the charcaters then means  that we have calculated the length of the string e 
                 break;  // break when the last word is fully counted
             }
         }
