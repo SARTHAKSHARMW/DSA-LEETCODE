@@ -23,6 +23,10 @@ class Solution {
         return count;
     }
 }
+Jewels → contains the types of stones that are jewels (e.g., "aA").
 
+Stones → represents all stones you have (e.g., "aAAbbbb").
+
+We want to count how many stones are jewels.
         
     
