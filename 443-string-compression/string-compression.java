@@ -4,17 +4,18 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         sb.append(chars[0]);
 
-        for (int i = 1; i < chars.length; i++) {
-            if (chars[i] != chars[i - 1]) {
-                if (count > 1) {
-                    sb.append(count);
-                }
-                sb.append(chars[i]);
-                count = 1;
-            } else {
-                count++;
-            }
+        for (int i = 1; i < chars.length; i++) {   // Loop starts from 1 because we compare with the previous char
+    if (chars[i] != chars[i - 1]) {        // If the current character is different from the previous
+        if (count > 1) {                   // If the previous char was repeated
+            sb.append(count);              // Add the number of occurrences to the result
         }
+        sb.append(chars[i]);               // Add the new (different) character to the result
+        count = 1;                         // Reset count for the new character
+    } else {
+        count++;                           // If same character continues, increment the count
+    }
+}
+
 
         // Append the count for the last group
         if (count > 1) {
