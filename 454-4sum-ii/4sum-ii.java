@@ -58,7 +58,35 @@ public class Solution {
         return count;
     }
 }
- /// simply meand 
+ /// simply meand
+
+
+//part 2 solutios
+
+
+HashMap<Integer, Integer> map = new HashMap<>();
+int count = 0;
+
+// Store all possible sums of nums1[i] + nums2[j] and their frequencies
+for (int i = 0; i < nums1.length; i++) {
+    for (int j = 0; j < nums2.length; j++) {
+        int sum = nums1[i] + nums2[j];
+        map.put(sum, map.getOrDefault(sum, 0) + 1);
+    }
+}
+
+// For each sum in nums3 and nums4, check if the negated sum exists in the map
+for (int k = 0; k < nums3.length; k++) {
+    for (int l = 0; l < nums4.length; l++) {
+        int target = -(nums3[k] + nums4[l]);
+        if (map.containsKey(target)) {
+            count += map.get(target);
+        }
+    }
+}
+
+return count;
+
 
 
 
