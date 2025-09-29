@@ -43,11 +43,15 @@ class Solution {
         while (ptr1 != null && ptr2 != null) {
             if (ptr1 == ptr2) return ptr1; // Intersection found
             ptr1 = ptr1.next;
-            ptr2 = ptr2.next;
+            ptr2 = ptr2.next; 
         }
         
         // No intersection
-        return null;
+        return null ; 
+    
     }
 }
+//SIMPLY MEANS THAT IF THE DIFFERENCE BETWEEN THE LIST IS POSITIVE THEN SIMPLY MOVE THE PTR1 FORWARD ELSE IF THE DIFFERENCE IS NEGATIVE THEN MOVE PTR2 FORWARD = PTR2 = PTR2.NEXT ; 
 
+
+//in this i
